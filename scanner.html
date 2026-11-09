@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#070c18">
+
+    <title>Link Scanner | DIVYADRUSHTI AI</title>
+
+    <link rel="stylesheet" href="sanjay.css">
+    <link rel="stylesheet" href="scanner.css">
+
+    <script src="sanjay.js" defer></script>
+    <script src="scanner.js" defer></script>
+</head>
+
+<body class="scanner-page">
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-symbol">👁</span>
+            <span>DIVYADRUSHTI <b>AI</b></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="scanner.html" class="active">Link Scanner</a>
+            <a href="intelligence.html">Threat Intelligence</a>
+            <a href="awareness.html">Cyber Awareness</a>
+            <a href="wisdom.html">Krishna's Wisdom</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- SCANNER HERO -->
+
+    <main>
+
+        <section class="scanner-hero">
+
+            <div class="scanner-background"></div>
+
+            <div class="scanner-heading">
+
+                <span class="scanner-status">
+                    ● DIGITAL SECURITY SYSTEM
+                </span>
+
+                <h1>
+                    CYBER <span>WAR</span> ZONE
+                </h1>
+
+                <p>
+                    Every link has a story.
+                    Let Sanjay reveal its hidden signals.
+                </p>
+
+            </div>
+
+
+            <!-- SCANNER BOX -->
+
+            <section class="scanner-box">
+
+                <div class="scanner-box-header">
+
+                    <div class="scanner-shield">🛡️</div>
+
+                    <div>
+                        <h2>DIVYADRUSHTI LINK ANALYSER</h2>
+                        <p>PRELIMINARY URL SECURITY CHECK</p>
+                    </div>
+
+                    <span class="system-indicator">
+                        SYSTEM READY
+                    </span>
+
+                </div>
+
+
+                <form id="scanForm">
+
+                    <label for="urlInput">
+                        ENTER WEBSITE URL
+                    </label>
+
+                    <div class="scanner-input-group">
+
+                        <span>🔗</span>
+
+                        <input
+                            type="url"
+                            id="urlInput"
+                            placeholder="https://example.com"
+                            autocomplete="url"
+                            required
+                        >
+
+                    </div>
+
+                    <button type="submit" id="scanButton">
+                        <span>🔍</span>
+                        ANALYSE LINK
+                    </button>
+
+                </form>
+
+
+                <div class="scanner-loading" id="scanLoading" hidden>
+
+                    <div class="scanner-loader"></div>
+
+                    <h3>SANJAY IS OBSERVING...</h3>
+
+                    <p>
+                        Analysing URL structure and security signals.
+                    </p>
+
+                </div>
+
+
+                <!-- RESULT AREA -->
+
+                <div class="scanner-result" id="scanResult" hidden>
+
+                    <div id="resultIcon" class="result-icon">
+                        🔍
+                    </div>
+
+                    <h2 id="resultTitle">
+                        ANALYSIS REPORT
+                    </h2>
+
+                    <p id="resultMessage"></p>
+
+                    <div class="risk-display">
+                        <span>RISK CLASSIFICATION</span>
+                        <strong id="riskLevel">UNKNOWN</strong>
+                    </div>
+
+                    <div class="report-box">
+
+                        <h3>👁 SANJAY'S OBSERVATION</h3>
+
+                        <ul id="reportList"></ul>
+
+                    </div>
+
+                    <div class="scanner-disclaimer">
+                        This preliminary check cannot guarantee that
+                        a website is safe. Do not enter passwords,
+                        OTPs or financial information on unfamiliar sites.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCANNER INFORMATION -->
+
+            <div class="scanner-info-grid">
+
+                <div class="scanner-info-card">
+                    <span>🔍</span>
+                    <h3>URL Inspection</h3>
+                    <p>Examine the structure of a website address.</p>
+                </div>
+
+                <div class="scanner-info-card">
+                    <span>⚠️</span>
+                    <h3>Risk Signals</h3>
+                    <p>Look for suspicious patterns and warning signs.</p>
+                </div>
+
+                <div class="scanner-info-card">
+                    <span>🛡️</span>
+                    <h3>Stay Protected</h3>
+                    <p>Learn to recognise potentially unsafe links.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-bottom">
+
+            <p>Created by Jadhav</p>
+
+            <p>
+                © 2026 DIVYADRUSHTI AI.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    
+<!-- DIVYADRUSHTI AI AUDIO SYSTEM -->
+
+<div class="audio-controls">
+    <button id="musicToggle" type="button">
+        🎵 Music ON
+    </button>
+</div>
+
+<audio id="backgroundMusic" loop>
+    <source src="assets/audio/background.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sanjayStart">
+    <source src="assets/audio/sanjay-start.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sanjayAlert">
+    <source src="assets/audio/sanjay-alert.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="sanjaySafe">
+    <source src="assets/audio/sanjay-safe.mp3" type="audio/mpeg">
+</audio>
+
+
+</body>
+</html>

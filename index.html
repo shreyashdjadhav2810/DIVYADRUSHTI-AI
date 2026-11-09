@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080d1b">
+
+    <title>DIVYADRUSHTI AI | The Digital Sanjay</title>
+
+    <meta name="description"
+        content="DIVYADRUSHTI AI - An intelligent cybersecurity awareness platform inspired by the vision of Sanjay.">
+
+    <link rel="stylesheet" href="sanjay.css">
+    <script src="sanjay.js" defer></script>
+</head>
+<div class="krishna-voice-control">
+    <button id="krishnaVoiceBtn">
+        🔊 श्रीकृष्णांचा उपदेश ऐका
+    </button>
+    <p id="krishnaVoiceStatus">दिव्य संदेश तयार आहे...</p>
+</div>
+
+<script>
+function testKrishnaVoice() {
+    const msg = new SpeechSynthesisUtterance(
+        "नमस्कार पार्थ, हा दिव्यदृष्टीचा आवाज आहे."
+    );
+
+    msg.lang = "hi-IN";
+    msg.volume = 1;
+    msg.rate = 0.8;
+
+    speechSynthesis.cancel();
+    speechSynthesis.speak(msg);
+}
+</script>
+<body data-page="home">
+
+    <!-- NAVIGATION BAR -->
+
+    <header class="navbar"><embed="c:\Users\sai\Desktop\logo.png">
+
+        <a href="index.html" class="logo">
+            <span class="logo-symbol">👁</span>
+            <span>DIVYADRUSHTI <b>AI</b></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="scanner.html">Link Scanner</a>
+            <a href="intelligence.html">Threat Intelligence</a>
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle"
+            aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <main>
+
+        <section class="hero-section">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    <span class="status-dot"></span>
+                    THE DIGITAL SANJAY
+                </div>
+
+                <h1>
+                    DIVYADRUSHTI
+                    <span>AI</span>
+                </h1>
+
+                <h2>
+                    See Beyond the Link.
+                    <br>
+                    Discover What Lies Within.
+                </h2>
+
+                <p class="hero-description">
+                    Inspired by the divine vision of Sanjay,
+                    powered by modern digital intelligence.
+
+                    Explore the world of cybersecurity,
+                    understand online threats and protect
+                    your digital journey.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="scanner.html" class="primary-btn">
+                        <span>🔍</span>
+                        Scan a Link
+                    </a>
+
+                    <a href="about.html" class="secondary-btn">
+                        Discover Our Mission
+                    </a>
+
+                </div>
+
+                <div class="hero-bottom-text">
+                    <span>ANCIENT WISDOM</span>
+                    <span class="separator">✦</span>
+                    <span>MODERN INTELLIGENCE</span>
+                </div>
+
+            </div>
+
+            <div class="hero-scroll">
+                EXPLORE MORE
+                <span>↓</span>
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+
+        <section class="intro-section">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    THE VISION
+                </span>
+
+                <h2>
+                    A New Vision for a Digital World
+                </h2>
+
+                <p>
+                    Just as Sanjay observed events beyond ordinary
+                    sight, DIVYADRUSHTI AI aims to help users
+                    examine the digital world with greater awareness.
+                </p>
+
+            </div>
+
+            <div class="vision-grid">
+
+                <article class="vision-card">
+                    <div class="vision-icon">👁</div>
+                    <h3>Observe</h3>
+                    <p>
+                        Examine website links and identify
+                        suspicious patterns.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="vision-icon">🧠</div>
+                    <h3>Understand</h3>
+                    <p>
+                        Learn how online scams and digital
+                        threats work.
+                    </p>
+                </article>
+
+                <article class="vision-card">
+                    <div class="vision-icon">🛡️</div>
+                    <h3>Protect</h3>
+                    <p>
+                        Build safer digital habits through
+                        awareness and knowledge.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- DIGITAL COMMAND CENTER -->
+
+        <section class="platform-section">
+
+            <div class="section-heading">
+
+                <span class="section-tag">
+                    EXPLORE THE PLATFORM
+                </span>
+
+                <h2>
+                    Enter the Digital Battlefield
+                </h2>
+
+                <p>
+                    Every section has a different mission.
+                    Choose where you want to begin.
+                </p>
+
+            </div>
+
+
+            <div class="platform-grid">
+
+                <a href="scanner.html" class="platform-card scanner-card">
+
+                    <div class="platform-icon">🔍</div>
+
+                    <span class="card-number">01</span>
+
+                    <h3>Link Scanner</h3>
+
+                    <p>
+                        Examine suspicious URLs and understand
+                        possible warning signals.
+                    </p>
+
+                    <span class="card-link">
+                        OPEN SCANNER →
+                    </span>
+
+                </a>
+
+
+                <a href="intelligence.html" class="platform-card intelligence-card">
+
+                    <div class="platform-icon">📡</div>
+
+                    <span class="card-number">02</span>
+
+                    <h3>Threat Intelligence</h3>
+
+                    <p>
+                        Explore digital threats, online risks
+                        and cybersecurity information.
+                    </p>
+
+                    <span class="card-link">
+                        EXPLORE INTELLIGENCE →
+                    </span>
+
+                </a>
+
+
+                <a href="awareness.html" class="platform-card awareness-card">
+
+                    <div class="platform-icon">🎓</div>
+
+                    <span class="card-number">03</span>
+
+                    <h3>Cyber Awareness</h3>
+
+                    <p>
+                        Understand phishing, fraud links,
+                        password safety and digital privacy.
+                    </p>
+
+                    <span class="card-link">
+                        START LEARNING →
+                    </span>
+
+                </a>
+
+
+                <a href="wisdom.html" class="platform-card wisdom-card">
+
+                    <div class="platform-icon">🦚</div>
+
+                    <span class="card-number">04</span>
+
+                    <h3>Krishna's Wisdom</h3>
+
+                    <p>
+                        Discover timeless guidance inspired
+                        by the teachings of Bhagavad Gita.
+                    </p>
+
+                    <span class="card-link">
+                        EXPLORE WISDOM →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- KRISHNA WISDOM PREVIEW -->
+
+        <section class="wisdom-preview">
+
+            <div class="wisdom-preview-content">
+
+                <span class="section-tag">
+                    THE WISDOM OF GITA
+                </span>
+
+                <div class="peacock-symbol">🦚</div>
+
+                <p class="sanskrit-line">
+                    हे पार्थ...
+                </p>
+
+                <h2>
+                    विवेक आणि ज्ञान हेच
+                    योग्य निर्णयाचे खरे सामर्थ्य आहे.
+                </h2>
+
+                <p>
+                    Pause. Observe. Think. Then decide.
+                    Let wisdom guide your digital journey.
+                </p>
+
+                <a href="wisdom.html" class="secondary-btn">
+                    Explore Krishna's Wisdom →
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- SAFETY NOTICE -->
+
+        <section class="safety-section">
+
+            <div class="safety-icon">⚠️</div>
+
+            <div>
+                <h2>Stay Alert in the Digital World</h2>
+
+                <p>
+                    Never share your passwords, OTPs or banking
+                    details with unknown websites or people.
+                    A preliminary link scan cannot guarantee
+                    that a website is safe.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <h2>👁 DIVYADRUSHTI AI</h2>
+
+                <p>THE DIGITAL SANJAY</p>
+
+                <span>
+                    Ancient Wisdom. Modern Intelligence.
+                </span>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>Explore</h3>
+
+                <a href="index.html">Home</a>
+                <a href="scanner.html">Link Scanner</a>
+                <a href="intelligence.html">Threat Intelligence</a>
+                <a href="awareness.html">Cyber Awareness</a>
+                <a href="wisdom.html">Krishna's Wisdom</a>
+                <a href="about.html">About</a>
+
+            </div>
+
+
+            <div class="footer-info">
+
+                <h3>Our Mission</h3>
+
+                <p>
+                    Making the digital world more understandable
+                    through cybersecurity awareness.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>Created by Jadhav</p>
+
+            <p>
+                © 2026 DIVYADRUSHTI AI.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
+

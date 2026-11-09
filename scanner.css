@@ -1,0 +1,548 @@
+ 
+/* =====================================
+   DIVYADRUSHTI AI
+   THE DIGITAL SANJAY
+   KRISHNA CYBER WAR SCANNER
+===================================== */
+
+.scanner-page {
+    background: #050a15;
+    color: #fff;
+}
+
+/* SCANNER HERO - SHRI KRISHNA BACKGROUND */
+
+.scanner-hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 85px 7%;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            rgba(3, 7, 19, 0.58),
+            rgba(3, 7, 19, 0.82)
+        ),
+        url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/202510/artificial-intelligence-in-movies--the-new-aicons-of-bollywood-241130762-3x4.png?VersionId=DWPVkm18hzCpIKIbNbqLtfZPyY8CLNcd")
+        center 35% / cover no-repeat;
+
+    background-attachment: scroll;
+}
+
+/* DIGITAL GRID OVERLAY */
+
+.scanner-background {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.25;
+
+    background:
+        linear-gradient(
+            rgba(39, 139, 255, 0.13) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(39, 139, 255, 0.13) 1px,
+            transparent 1px
+        );
+
+    background-size: 45px 45px;
+
+    mask-image: linear-gradient(
+        to bottom,
+        black,
+        transparent 90%
+    );
+}
+
+/* SCANNER HEADING */
+
+.scanner-heading {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.scanner-status {
+    display: inline-block;
+    color: #35e7a0;
+    font-size: 11px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.scanner-heading h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: clamp(43px, 7vw, 75px);
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-shadow: 0 0 30px rgba(0, 140, 255, 0.4);
+}
+
+.scanner-heading h1 span {
+    color: #168cff;
+}
+
+.scanner-heading p {
+    color: #a9bbd5;
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+/* MAIN SCANNER BOX */
+
+.scanner-box {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+
+    background: rgba(9, 22, 43, 0.91);
+
+    border: 1px solid rgba(52, 151, 255, 0.35);
+    border-radius: 14px;
+
+    box-shadow:
+        0 0 35px rgba(0, 102, 255, 0.12),
+        inset 0 0 30px rgba(0, 100, 255, 0.04);
+
+    backdrop-filter: blur(15px);
+}
+
+/* SCANNER HEADER */
+
+.scanner-box-header {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(90, 158, 255, 0.18);
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.scanner-shield {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    font-size: 28px;
+    border-radius: 12px;
+    background: rgba(0, 125, 255, 0.15);
+    border: 1px solid rgba(0, 140, 255, 0.35);
+}
+
+.scanner-box-header h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.scanner-box-header p {
+    color: #7996bd;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 7px;
+}
+
+.system-indicator {
+    margin-left: auto;
+    padding: 8px 12px;
+    color: #35e7a0;
+    font-size: 10px;
+    letter-spacing: 1px;
+    border: 1px solid rgba(53, 231, 160, 0.3);
+    background: rgba(53, 231, 160, 0.06);
+    border-radius: 5px;
+}
+
+/* INPUT FORM */
+
+#scanForm label {
+    display: block;
+    font-size: 12px;
+    color: #a9c5e8;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.scanner-input-group {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 5px 17px;
+
+    background: #050d1c;
+    border: 1px solid rgba(63, 151, 255, 0.35);
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.scanner-input-group:focus-within {
+    border-color: #168cff;
+    box-shadow: 0 0 18px rgba(22, 140, 255, 0.18);
+}
+
+.scanner-input-group span {
+    font-size: 19px;
+}
+
+.scanner-input-group input {
+    width: 100%;
+    min-width: 0;
+    padding: 16px 0;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.scanner-input-group input::placeholder {
+    color: #61738e;
+}
+
+#scanButton {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: linear-gradient(100deg, #0876e9, #11b6f4);
+    color: white;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#scanButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 140, 255, 0.35);
+}
+
+#scanButton:disabled {
+    opacity: 0.6;
+    cursor: wait;
+    transform: none;
+}
+
+/* LOADING ANIMATION */
+
+.scanner-loading {
+    text-align: center;
+    padding: 35px 10px;
+}
+
+.scanner-loader {
+    width: 55px;
+    height: 55px;
+    margin: 0 auto 20px;
+    border: 4px solid rgba(22, 140, 255, 0.16);
+    border-top-color: #168cff;
+    border-radius: 50%;
+    animation: scannerSpin 1s linear infinite;
+}
+
+.scanner-loading h3 {
+    color: #56c5ff;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.scanner-loading p {
+    color: #93a9c8;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+@keyframes scannerSpin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* RESULT AREA */
+
+.scanner-result {
+    margin-top: 35px;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(3, 10, 23, 0.8);
+    border: 1px solid rgba(90, 158, 255, 0.2);
+    text-align: center;
+}
+
+.result-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.scanner-result h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.scanner-result > p {
+    color: #a9bbd5;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.risk-display {
+    margin: 25px 0;
+    padding: 17px;
+    background: rgba(22, 140, 255, 0.08);
+    border: 1px solid rgba(22, 140, 255, 0.22);
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.risk-display span {
+    color: #9eb5d5;
+    font-size: 12px;
+}
+
+.risk-display strong {
+    color: #56c5ff;
+    font-size: 13px;
+}
+
+.report-box {
+    padding: 20px;
+    text-align: left;
+    background: #091529;
+    border: 1px solid rgba(90, 158, 255, 0.15);
+    border-radius: 8px;
+}
+
+.report-box h3 {
+    color: #56c5ff;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.report-box ul {
+    padding-left: 20px;
+    color: #bdc9dc;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.scanner-disclaimer {
+    margin-top: 20px;
+    padding: 13px;
+    background: rgba(230, 166, 48, 0.07);
+    border-left: 3px solid #e8bd68;
+    color: #c9b98f;
+    font-size: 11px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* INFORMATION CARDS */
+
+.scanner-info-grid {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 65px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.scanner-info-card {
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 9px;
+
+    background: rgba(12, 29, 53, 0.8);
+    border: 1px solid rgba(63, 151, 255, 0.2);
+
+    transition: 0.3s;
+}
+
+.scanner-info-card:hover {
+    transform: translateY(-5px);
+    border-color: #168cff;
+    box-shadow: 0 8px 25px rgba(0, 102, 255, 0.1);
+}
+
+.scanner-info-card > span {
+    font-size: 30px;
+}
+
+.scanner-info-card h3 {
+    font-size: 16px;
+    margin: 14px 0 9px;
+}
+
+.scanner-info-card p {
+    color: #91a7c6;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+
+.scanner-page .footer {
+    padding-top: 25px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    .scanner-hero {
+        padding: 65px 5%;
+        background-position: 45% center;
+    }
+
+    .scanner-box {
+        padding: 22px 17px;
+    }
+
+    .scanner-box-header {
+        gap: 12px;
+    }
+
+    .system-indicator {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .scanner-info-grid {
+        grid-template-columns: 1fr;
+        margin-top: 40px;
+    }
+
+    .risk-display {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .scanner-heading h1 {
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .scanner-box-header h2 {
+        font-size: 14px;
+    }
+
+    .scanner-heading h1 {
+        font-size: 38px;
+    }
+
+    .scanner-result {
+        padding: 17px;
+    }
+}
+
+/* Golden Sudarshan Chakra Loader */
+
+.sudarshan-loader {
+    width: 115px;
+    height: 115px;
+    margin: 25px auto;
+    border: 4px solid #d4af37;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: sudarshanSpin 2s linear infinite;
+    box-shadow: 0 0 18px #d4af37,
+                inset 0 0 15px #d4af37;
+}
+
+.sudarshan-loader::before {
+    content: "✺";
+    font-size: 85px;
+    color: #ffd700;
+    text-shadow: 0 0 15px #ffd700;
+}
+
+.sudarshan-loader::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: 2px dashed #ffd700;
+    border-radius: 50%;
+}
+
+@keyframes sudarshanSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* GOLDEN SUDARSHAN CHAKRA */
+
+.sudarshan-loader {
+    width: 120px;
+    height: 120px;
+    margin: 25px auto;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 20px #d4af37,
+                inset 0 0 15px #d4af37;
+    animation: chakraRotate 2s linear infinite;
+}
+
+.sudarshan-loader::before {
+    content: "✺";
+    position: absolute;
+    font-size: 105px;
+    color: #ffd700;
+    text-shadow: 0 0 15px #ffd700;
+}
+
+.sudarshan-loader::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border: 2px dashed #ffd700;
+    border-radius: 50%;
+}
+
+.chakra-center {
+    width: 17px;
+    height: 17px;
+    background: #ffd700;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #ffd700;
+    z-index: 2;
+}
+
+@keyframes chakraRotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
